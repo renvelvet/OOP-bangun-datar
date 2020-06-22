@@ -9,7 +9,7 @@ How to:
 5. Lihat hasil keluaran di console
 
 Example:
-input: segitiga = new BangunDatar()
-output: BangunDatar {luas: undefined, keliling: undefined}
-input: console.log(segitiga.hitungSegitigaSikuSiku(12,10))
-output: Luas = 60, Keliling = 37.62049935181331
+- input: segitiga = new BangunDatar()
+- output: BangunDatar {luas: undefined, keliling: undefined}
+- input: console.log(segitiga.hitungSegitigaSikuSiku(12,10))
+- output: Luas = 60, Keliling = 37.62049935181331
