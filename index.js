@@ -4,7 +4,7 @@ class BangunDatar {
     this.keliling = keliling;
   }
 
-  hiyungPersegi(s) {
+  hitungPersegi(s) {
     this.luas = s * s;
     this.keliling = 4 * s;
     return `Luas = ${this.luas}, Keliling = ${this.keliling}`;
@@ -26,5 +26,28 @@ class BangunDatar {
     this.luas = Math.PI * r * r;
     this.keliling = 2 * Math.PI * r;
     return `Luas = ${this.luas}, Keliling = ${this.keliling}`;
+  }
+}
+
+class BangunRuang extends BangunDatar {
+  constructor(luas, keliling, volume) {
+    super(luas, keliling);
+    this.volume = volume;
+  }
+
+  hitungKubus(s) {
+    hitungPersegi(s);
+    this.luas = luas;
+    this.keliling = keliling;
+    this.volume = s * luas;
+    return `Luas = ${this.luas}, Keliling = ${this.keliling}, Volume = ${this.volume}`;
+  }
+
+  hitungBalok(p, l, t) {
+    hitungPersegiPanjang(p, l);
+    this.luas = luas;
+    this.keliling = keliling;
+    this.volume = t * luas;
+    return `Luas = ${this.luas}, Keliling = ${this.keliling}, Volume = ${this.volume}`;
   }
 }
