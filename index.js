@@ -18,7 +18,7 @@ class BangunDatar {
 
   hitungSegitigaSikuSiku(a, t) {
     this.luas = (1 / 2) * a * t;
-    this.keliling = a + t + sqrt(a * a + t * t);
+    this.keliling = a + t + Math.sqrt(a * a + t * t);
     return `Luas = ${this.luas}, Keliling = ${this.keliling}`;
   }
 
