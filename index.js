@@ -36,18 +36,17 @@ class BangunRuang extends BangunDatar {
   }
 
   hitungKubus(s) {
-    hitungPersegi(s);
-    this.luas = luas;
-    this.keliling = keliling;
-    this.volume = s * luas;
-    return `Luas = ${this.luas}, Keliling = ${this.keliling}, Volume = ${this.volume}`;
+    super.hitungPersegi(s);
+    this.volume = s * this.luas;
+    let luasPermukaan = 6 * this.luas;
+    let kelilingPermukaan = 3 * this.keliling;
+    return `Luas Permukaan = ${luasPermukaan}, Keliling = ${kelilingPermukaan}, Volume = ${this.volume}`;
   }
 
   hitungBalok(p, l, t) {
-    hitungPersegiPanjang(p, l);
-    this.luas = luas;
-    this.keliling = keliling;
-    this.volume = t * luas;
-    return `Luas = ${this.luas}, Keliling = ${this.keliling}, Volume = ${this.volume}`;
+    super.hitungPersegiPanjang(p, l);
+    this.volume = t * this.luas;
+    let luasPermukaan = 2 * (this.luas + p * t + l * t);
+    return `Luas Permukaan = ${luasPermukaan}, Volume = ${this.volume}`;
   }
 }
